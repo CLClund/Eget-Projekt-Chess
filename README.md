@@ -13,6 +13,11 @@ Download the project files to your computer.
 Open a terminal and navigate to the project folder named chess.
 Run the command python main.py in the terminal to start the game.
 
+Work in Progress
+Checkmate functionality has not yet been implemented.
+The implementation of check is close to completion.
+The new game feature is currently under development.
+
 Lessons Learned and Challenges
 Through this project, I developed a stronger understanding of how to use Pygame and NumPy effectively in practice.
 I also gained valuable experience in developing a complete project independently, from the initial idea to the finished implementation.
