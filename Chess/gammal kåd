@@ -1,0 +1,34 @@
+
+
+    def filer_dublicates(self,possibul_CoordinateS_To_Move_To, x, y):
+        retBool = np.empty((0,1),dtype='b')
+        for pctmt in possibul_CoordinateS_To_Move_To:
+            appendBool = True
+            match pctmt[2]:
+                case 0:
+                    if x > pctmt[0] and y == pctmt[1]:
+                        appendBool = False
+                case 1:
+                    if x == pctmt[0] and y < pctmt[1]:
+                        appendBool = False
+                case 2:
+                    if x < pctmt[0] and y == pctmt[1]:
+                        appendBool = False
+                case 3:
+                    if x == pctmt[0] and y > pctmt[1]:
+                        appendBool = False
+                case 4:
+                    if x > pctmt[0] and y > pctmt[1]:
+                        appendBool = False
+                case 5:
+                    if x < pctmt[0] and y > pctmt[1]:
+                        appendBool = False
+                case 6:
+                    if x < pctmt[0] and y < pctmt[1]:
+                        appendBool = False
+                case 7:
+                    if x > pctmt[0] and y < pctmt[1]:
+                        appendBool = False
+            retBool = np.append(retBool, appendBool)
+            print(retBool)
+        return Collison.filerting(possibul_CoordinateS_To_Move_To,retBool)
